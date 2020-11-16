@@ -1,5 +1,6 @@
 import 'package:dalilko/constant/app_colors.dart';
 import 'package:dalilko/constant/fonts.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // Color color = AppColors.secondaryColor ;
@@ -15,52 +16,49 @@ class IconWidget extends StatefulWidget {
 }
 
 class _IconWidgetState extends State<IconWidget> {
-
-
   @override
   Widget build(BuildContext context) {
-    return  Padding(
+    return Padding(
       padding: const EdgeInsets.only(top: 4),
       child: GestureDetector(
-          child: Container(
-            width: 100,
-            child: Column(
-              children: [
-                Container(
-                  height: MediaQuery.of(context).size.width * 0.20,
-                  width: MediaQuery.of(context).size.width * 0.20,
-                  decoration: BoxDecoration(
-                    // border: Border.all(color:color),
-                    color: AppColors.primaryColor,
-                    borderRadius: BorderRadius.circular(40.0),
-                  ),
-
-                  child: Icon(
-                    widget.icon,
-                    size: 25.0,
-                    color: AppColors.secondaryColor,
-                  ),
+        child: Container(
+          // width: MediaQuery.of(context).size.width/5.2,
+          child: Column(
+            children: [
+              Container(
+                height: MediaQuery.of(context).size.width / 6.2,
+                width: MediaQuery.of(context).size.width / 6.2,
+                decoration: BoxDecoration(
+                  // border: Border.all(color:color),
+                  color: AppColors.primaryColor,
+                  borderRadius: BorderRadius.circular(40.0),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    widget.text,
-                    style: AppFonts.textStyle3,
-                  ),
+                child: Icon(
+                  widget.icon,
+                  size: 30.0,
+                  color: AppColors.secondaryColor,
                 ),
-              ],
-            ),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width / 4.5,
+                padding: const EdgeInsets.all(4.0),
+                child: Text(
+                  widget.text,
+                  style: AppFonts.textStyleAmaranth3,
+                ),
+              ),
+            ],
           ),
-          // onTap: (){
-          //   setState(() {
-          //     color == AppColors.secondaryColor ;
-          //   });
-          // },
+        ),
+        // onTap: (){
+        //   setState(() {
+        //     color == AppColors.secondaryColor ;
+        //   });
+        // },
       ),
     );
   }
 }
-
 
 // class IconsBar  {
 //   int _selectedIndex = 0;

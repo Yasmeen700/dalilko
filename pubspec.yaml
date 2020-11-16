@@ -71,6 +71,17 @@ flutter:
       fonts:
         - asset: assets/fonts/Amaranth-Bold.ttf
         - asset: assets/fonts/Amaranth-Regular.ttf
+    - family: AllertaStencil
+      fonts:
+        - asset: assets/fonts/AllertaStencil-Regular.ttf
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+    - family: Calibri
+      fonts:
+        - asset: assets/fonts/Calibri.ttf
+
+
 
   #   - family: Trajan Pro
   #     fonts:

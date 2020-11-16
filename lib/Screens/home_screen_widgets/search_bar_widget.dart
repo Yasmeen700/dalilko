@@ -15,12 +15,12 @@ class SearchBar extends StatelessWidget {
             height: 40,
             child: TextField(
               textAlign: TextAlign.left,
-              style: AppFonts.textFieldStyle,
+              style: AppFonts.textFieldStyleAmaranth,
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(
                     vertical: 0, horizontal: 10),
                 hintText: 'Find your place...',
-                hintStyle: AppFonts.hintStyle,
+                hintStyle: AppFonts.hintStyleAmaranth,
                 border: OutlineInputBorder(
                   borderSide: BorderSide.none,
                   borderRadius: BorderRadius.all(Radius.circular(8)),

@@ -34,7 +34,7 @@ class CustomAppBar extends PreferredSize {
               child: Stack(
                 children: <Widget>[
                   Positioned(
-                    left: 15,
+                    left: 10,
                     top: 5,
                     bottom: 5,
                     child: Row(
@@ -48,7 +48,7 @@ class CustomAppBar extends PreferredSize {
                     ),
                   ),
                   Positioned(
-                    right: 15,
+                    right: 10,
                     top: 5,
                     bottom: 5,
                     child: Row(
